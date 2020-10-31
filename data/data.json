@@ -1,0 +1,2857 @@
+{
+    "nhits": 229,
+    "parameters": {
+        "dataset": [
+            "covid-19-pandemic-belgium-hosp-province@public"
+        ],
+        "timezone": "UTC",
+        "rows": 100,
+        "start": 0,
+        "sort": [
+            "date"
+        ],
+        "format": "json",
+        "facet": [
+            "date",
+            "province",
+            "region"
+        ]
+    },
+    "records": [
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "74fff03c301aefb2c60fc968c892e3b5687c6930",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 15,
+                "new_in": 115,
+                "total_in_resp": 95,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 92,
+                "total_in_icu": 166,
+                "nr_reporting": 15,
+                "total_in": 1026,
+                "date": "2020-10-29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "1557ae144493e174e51666dbba132366a2fa15c8",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 15,
+                "new_in": 124,
+                "total_in_resp": 95,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 87,
+                "total_in_icu": 157,
+                "nr_reporting": 15,
+                "total_in": 1001,
+                "date": "2020-10-28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "f650459f2dcb99556580489289c77b6611ec24cd",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 17,
+                "new_in": 123,
+                "total_in_resp": 95,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 87,
+                "total_in_icu": 145,
+                "nr_reporting": 15,
+                "total_in": 942,
+                "date": "2020-10-27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "21df7c4bb8966284724fd05b1a924433fc23dade",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 15,
+                "new_in": 61,
+                "total_in_resp": 96,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 41,
+                "total_in_icu": 151,
+                "nr_reporting": 15,
+                "total_in": 927,
+                "date": "2020-10-26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "4606a704c6e98ad3689be89ac7fc480f5fdeb664",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 13,
+                "new_in": 97,
+                "total_in_resp": 79,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 49,
+                "total_in_icu": 145,
+                "nr_reporting": 15,
+                "total_in": 895,
+                "date": "2020-10-25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "2eca516cb015384c613623c3e60da743b2538be4",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 13,
+                "new_in": 113,
+                "total_in_resp": 83,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 78,
+                "total_in_icu": 142,
+                "nr_reporting": 15,
+                "total_in": 848,
+                "date": "2020-10-24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "09da97a603ed3e6a4281823d569a096c2ef7159d",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 13,
+                "new_in": 113,
+                "total_in_resp": 72,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 58,
+                "total_in_icu": 128,
+                "nr_reporting": 15,
+                "total_in": 787,
+                "date": "2020-10-23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "a784344645895582f94e96921fd71f67925b0c39",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 12,
+                "new_in": 106,
+                "total_in_resp": 71,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 59,
+                "total_in_icu": 116,
+                "nr_reporting": 15,
+                "total_in": 730,
+                "date": "2020-10-22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "527c5262ba690985f80b74226360a99a0f55faf4",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 15,
+                "new_in": 86,
+                "total_in_resp": 73,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 49,
+                "total_in_icu": 104,
+                "nr_reporting": 15,
+                "total_in": 664,
+                "date": "2020-10-21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "15c221d46d74e2b7cfe35b8a4ea8ab10f0bf7188",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 13,
+                "new_in": 91,
+                "total_in_resp": 66,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 52,
+                "total_in_icu": 103,
+                "nr_reporting": 15,
+                "total_in": 603,
+                "date": "2020-10-20"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "af086c9ae86292f3014be9d969279fe1463382b9",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 11,
+                "new_in": 72,
+                "total_in_resp": 57,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 18,
+                "total_in_icu": 97,
+                "nr_reporting": 15,
+                "total_in": 565,
+                "date": "2020-10-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "be394f8040a54c70a51329e0550cc60aaf8344c3",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 10,
+                "new_in": 51,
+                "total_in_resp": 54,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 16,
+                "total_in_icu": 90,
+                "nr_reporting": 15,
+                "total_in": 498,
+                "date": "2020-10-18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "d3f699a4797aaff3ab96785db583ec4b6a1a64dd",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 10,
+                "new_in": 63,
+                "total_in_resp": 50,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 38,
+                "total_in_icu": 82,
+                "nr_reporting": 15,
+                "total_in": 460,
+                "date": "2020-10-17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "ca4612054a7a01c7900edb919be3c1913b116f1b",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 10,
+                "new_in": 27,
+                "total_in_resp": 48,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 30,
+                "total_in_icu": 72,
+                "nr_reporting": 15,
+                "total_in": 411,
+                "date": "2020-10-16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "f9a0718501e3f6625ac3a018a445cf1cd812e91b",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 8,
+                "new_in": 56,
+                "total_in_resp": 47,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 34,
+                "total_in_icu": 70,
+                "nr_reporting": 15,
+                "total_in": 393,
+                "date": "2020-10-15"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "85bdee5b57197c642d6cb53064102e108302161c",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 9,
+                "new_in": 49,
+                "total_in_resp": 45,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 41,
+                "total_in_icu": 71,
+                "nr_reporting": 15,
+                "total_in": 366,
+                "date": "2020-10-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "65bda81d989022fd00b7f3ad3e9da7d15f6b4814",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 9,
+                "new_in": 43,
+                "total_in_resp": 46,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 31,
+                "total_in_icu": 67,
+                "nr_reporting": 15,
+                "total_in": 347,
+                "date": "2020-10-13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "29a1518521432b57e44415e9b1d5b4e83855a8c0",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 8,
+                "new_in": 35,
+                "total_in_resp": 43,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 24,
+                "total_in_icu": 65,
+                "nr_reporting": 15,
+                "total_in": 330,
+                "date": "2020-10-12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e7340152f88cefbd6b0af7452a08980cf97066c6",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 8,
+                "new_in": 22,
+                "total_in_resp": 33,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 20,
+                "total_in_icu": 62,
+                "nr_reporting": 15,
+                "total_in": 315,
+                "date": "2020-10-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "960cef9a2a32f1a33cd1ca3cb1ee4a3dbb1624fb",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 7,
+                "new_in": 32,
+                "total_in_resp": 32,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 40,
+                "total_in_icu": 60,
+                "nr_reporting": 15,
+                "total_in": 320,
+                "date": "2020-10-10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "770788fadb733da775103f9e66a48a0442eab0bb",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 6,
+                "new_in": 29,
+                "total_in_resp": 33,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 24,
+                "total_in_icu": 60,
+                "nr_reporting": 15,
+                "total_in": 305,
+                "date": "2020-10-09"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "813b510f17647f5a89595a5643df8507e74d1b9b",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 7,
+                "new_in": 37,
+                "total_in_resp": 36,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 28,
+                "total_in_icu": 60,
+                "nr_reporting": 15,
+                "total_in": 298,
+                "date": "2020-10-08"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "fc157c55f183894370a70c4dff6d1e2490f462e4",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 7,
+                "new_in": 38,
+                "total_in_resp": 34,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 26,
+                "total_in_icu": 56,
+                "nr_reporting": 15,
+                "total_in": 286,
+                "date": "2020-10-07"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e2268aadf7adac9f5f30b27f89fe7faacd711f7a",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 6,
+                "new_in": 28,
+                "total_in_resp": 34,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 26,
+                "total_in_icu": 56,
+                "nr_reporting": 15,
+                "total_in": 270,
+                "date": "2020-10-06"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "d36f591223da744e0363e892906d3f7cd8149f20",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 5,
+                "new_in": 30,
+                "total_in_resp": 34,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 17,
+                "total_in_icu": 55,
+                "nr_reporting": 15,
+                "total_in": 260,
+                "date": "2020-10-05"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "f86239e0304708de784bdd8e68d9f5737386744c",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 6,
+                "new_in": 18,
+                "total_in_resp": 31,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 12,
+                "total_in_icu": 52,
+                "nr_reporting": 15,
+                "total_in": 238,
+                "date": "2020-10-04"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "fbb15c21938421dca525b2d04301830760173e59",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 5,
+                "new_in": 20,
+                "total_in_resp": 30,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 25,
+                "total_in_icu": 51,
+                "nr_reporting": 15,
+                "total_in": 246,
+                "date": "2020-10-03"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "f61745a8c0bbe29eab61501c3f7e14575ab562dc",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 11,
+                "total_in_resp": 32,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 12,
+                "total_in_icu": 50,
+                "nr_reporting": 15,
+                "total_in": 240,
+                "date": "2020-10-02"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "6a71f11206e806aa69d8d14f150b0cfe52cb1a1e",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 33,
+                "total_in_resp": 32,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 24,
+                "total_in_icu": 49,
+                "nr_reporting": 15,
+                "total_in": 243,
+                "date": "2020-10-01"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "5b4eb89f52347686016be6cdbc508b6fe5136785",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 34,
+                "total_in_resp": 35,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 30,
+                "total_in_icu": 51,
+                "nr_reporting": 15,
+                "total_in": 235,
+                "date": "2020-09-30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "637cd5ca3f6e7aeb310a3e11d8ba87b80682a6ce",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 30,
+                "total_in_resp": 32,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 25,
+                "total_in_icu": 46,
+                "nr_reporting": 15,
+                "total_in": 221,
+                "date": "2020-09-29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e3963d5d0fb1ac0367c3fbaa71cfd40dbf611706",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 23,
+                "total_in_resp": 28,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 13,
+                "total_in_icu": 44,
+                "nr_reporting": 15,
+                "total_in": 210,
+                "date": "2020-09-28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "eacfec46bcf5778b6450481d730f84397cbafe87",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 18,
+                "total_in_resp": 28,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 9,
+                "total_in_icu": 42,
+                "nr_reporting": 15,
+                "total_in": 190,
+                "date": "2020-09-27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "31f7951a8aac59f9fc53dbde16f0bf6ee6a31171",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 13,
+                "total_in_resp": 26,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 15,
+                "total_in_icu": 40,
+                "nr_reporting": 15,
+                "total_in": 178,
+                "date": "2020-09-26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "3ecf40345cb8a6e84afaca9248436192b8fed4ab",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 5,
+                "new_in": 20,
+                "total_in_resp": 23,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 24,
+                "total_in_icu": 41,
+                "nr_reporting": 15,
+                "total_in": 178,
+                "date": "2020-09-25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "5817145ed07f7eeb0df77ef735419837dbcf9787",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 6,
+                "new_in": 24,
+                "total_in_resp": 26,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 12,
+                "total_in_icu": 37,
+                "nr_reporting": 15,
+                "total_in": 182,
+                "date": "2020-09-24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "4b7fa96b52310f1ad65970b52010f556f0c34541",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 5,
+                "new_in": 22,
+                "total_in_resp": 24,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 14,
+                "total_in_icu": 35,
+                "nr_reporting": 15,
+                "total_in": 165,
+                "date": "2020-09-23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "b7def973667b98848bb10832feaae05473ef0dea",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 21,
+                "total_in_resp": 20,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 24,
+                "total_in_icu": 32,
+                "nr_reporting": 15,
+                "total_in": 155,
+                "date": "2020-09-22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e063a9a2e9c02bc9083849d9d03c1ead1ffd641c",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 29,
+                "total_in_resp": 17,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 13,
+                "total_in_icu": 27,
+                "nr_reporting": 15,
+                "total_in": 151,
+                "date": "2020-09-21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "8c1c64bca30fe850fc25580ed5adf5e86aac20cc",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 8,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 22,
+                "nr_reporting": 15,
+                "total_in": 124,
+                "date": "2020-09-20"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "1a446db437eb71b655b2403c59b0921fb9250537",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 13,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 12,
+                "total_in_icu": 22,
+                "nr_reporting": 15,
+                "total_in": 120,
+                "date": "2020-09-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "dcb445c2f44742149061b275b45f6c75be894144",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 5,
+                "new_in": 9,
+                "total_in_resp": 14,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 19,
+                "total_in_icu": 23,
+                "nr_reporting": 15,
+                "total_in": 117,
+                "date": "2020-09-18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "bddb04b9029ef313acefff10a231a04d0c2bd2a2",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 16,
+                "total_in_resp": 12,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 22,
+                "total_in_icu": 23,
+                "nr_reporting": 15,
+                "total_in": 117,
+                "date": "2020-09-17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "808c154f7951d905742868c5b7ccec36c62cd14a",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 17,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 8,
+                "total_in_icu": 24,
+                "nr_reporting": 15,
+                "total_in": 114,
+                "date": "2020-09-16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "2e731ac7062e4a71b8fee06566ac19cf5dd5862a",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 14,
+                "total_in_resp": 10,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 19,
+                "total_in_icu": 21,
+                "nr_reporting": 15,
+                "total_in": 101,
+                "date": "2020-09-15"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "7a624ee45ce14a69a3ba7c04bb5f1c42eda95934",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 13,
+                "total_in_resp": 11,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 10,
+                "total_in_icu": 21,
+                "nr_reporting": 15,
+                "total_in": 101,
+                "date": "2020-09-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "981d4b048d466962bef99b510c97d712ae87784c",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 14,
+                "total_in_resp": 11,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 7,
+                "total_in_icu": 24,
+                "nr_reporting": 15,
+                "total_in": 94,
+                "date": "2020-09-13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "941ff89e48e07a16c2da300dc8c47839d7e2c450",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 9,
+                "total_in_resp": 11,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 8,
+                "total_in_icu": 25,
+                "nr_reporting": 15,
+                "total_in": 87,
+                "date": "2020-09-12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e3e2e8ffd249efab93e02cfd6f23cdf126557221",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 13,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 14,
+                "total_in_icu": 25,
+                "nr_reporting": 15,
+                "total_in": 88,
+                "date": "2020-09-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "50f85765d306ea391ecb0a8be8ecd6d3ab10a152",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 6,
+                "total_in_resp": 10,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 24,
+                "nr_reporting": 15,
+                "total_in": 88,
+                "date": "2020-09-10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "16c37c4c5987c676a88fcabd96a96534f3c9a989",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 3,
+                "total_in_resp": 12,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 12,
+                "total_in_icu": 23,
+                "nr_reporting": 15,
+                "total_in": 88,
+                "date": "2020-09-09"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "7be4c738d0ef66629e4c99b8118d142708e0e871",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 15,
+                "total_in_resp": 11,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 12,
+                "total_in_icu": 23,
+                "nr_reporting": 15,
+                "total_in": 96,
+                "date": "2020-09-08"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "c2469dae7a5ce7fcfebe9427af1e0da6215983d4",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 17,
+                "total_in_resp": 12,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 22,
+                "nr_reporting": 15,
+                "total_in": 92,
+                "date": "2020-09-07"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "0f66f02f1f40a61e338be9c224e461362db450e6",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 5,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 23,
+                "nr_reporting": 15,
+                "total_in": 79,
+                "date": "2020-09-06"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "6b7b81023bdd42ff4ab69e41a0aeb4abee0187d8",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 2,
+                "total_in_resp": 14,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 5,
+                "total_in_icu": 22,
+                "nr_reporting": 15,
+                "total_in": 76,
+                "date": "2020-09-05"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "77d0e569bb186e23aa92c69386adc95e22ca8955",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 6,
+                "new_in": 6,
+                "total_in_resp": 14,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 6,
+                "total_in_icu": 19,
+                "nr_reporting": 15,
+                "total_in": 79,
+                "date": "2020-09-04"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "1e78a626a3c41d2c234d7165da8cde63b0dbf785",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 2,
+                "total_in_resp": 16,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 24,
+                "nr_reporting": 15,
+                "total_in": 75,
+                "date": "2020-09-03"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "0596fa3bb3e46d5d5351213d81be7e467c29a384",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 10,
+                "total_in_resp": 18,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 14,
+                "total_in_icu": 24,
+                "nr_reporting": 15,
+                "total_in": 78,
+                "date": "2020-09-02"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "4a6dc7d82b2ebfcbf6bfc086350829d0c165e5c1",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 6,
+                "total_in_resp": 17,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 11,
+                "total_in_icu": 27,
+                "nr_reporting": 15,
+                "total_in": 79,
+                "date": "2020-09-01"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "f1da6f8b4d4e7b3d0797f5ce8f8ea30f431c6382",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 2,
+                "total_in_resp": 17,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 1,
+                "total_in_icu": 29,
+                "nr_reporting": 15,
+                "total_in": 86,
+                "date": "2020-08-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "1714bdb7e75fbb06de2f8cec5bbe7859bb6d5778",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 2,
+                "total_in_resp": 16,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 3,
+                "total_in_icu": 25,
+                "nr_reporting": 15,
+                "total_in": 84,
+                "date": "2020-08-30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "50dc5f07bd14a3ad89d69e28310db043b740c458",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 3,
+                "total_in_resp": 16,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 25,
+                "nr_reporting": 15,
+                "total_in": 85,
+                "date": "2020-08-29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e92f52abd6cb248419fdc24860c6e2b9f8ed5335",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 3,
+                "new_in": 5,
+                "total_in_resp": 17,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 8,
+                "total_in_icu": 26,
+                "nr_reporting": 15,
+                "total_in": 89,
+                "date": "2020-08-28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "43b13d95d1de4476ae6287fe124ef0674b29cc93",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 8,
+                "total_in_resp": 15,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 10,
+                "total_in_icu": 29,
+                "nr_reporting": 15,
+                "total_in": 93,
+                "date": "2020-08-27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e0d4820bb0d27bf519beeb3a28cf3775d2b9ae8e",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 11,
+                "total_in_resp": 14,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 18,
+                "total_in_icu": 28,
+                "nr_reporting": 15,
+                "total_in": 94,
+                "date": "2020-08-26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "ebae2b76bd9e8945dfbc285dbd7b7ce173ed7d0f",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 3,
+                "total_in_resp": 14,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 15,
+                "total_in_icu": 26,
+                "nr_reporting": 15,
+                "total_in": 100,
+                "date": "2020-08-25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "6405b85b5d3f445f60cdd3938238cdf2bce50475",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 4,
+                "new_in": 3,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 15,
+                "total_in_icu": 29,
+                "nr_reporting": 15,
+                "total_in": 109,
+                "date": "2020-08-24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "080f6a0c91cbda2f13ac3bdddc48539fa7a37559",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 5,
+                "total_in_resp": 12,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 8,
+                "total_in_icu": 28,
+                "nr_reporting": 15,
+                "total_in": 114,
+                "date": "2020-08-23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e99006d4c3dc85c27abf19f1c7330da3963d158a",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 4,
+                "total_in_resp": 14,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 10,
+                "total_in_icu": 28,
+                "nr_reporting": 15,
+                "total_in": 115,
+                "date": "2020-08-22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "8e67a14dc8778f9c6e006ee2365462c79bd26c29",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 10,
+                "total_in_resp": 15,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 10,
+                "total_in_icu": 30,
+                "nr_reporting": 15,
+                "total_in": 110,
+                "date": "2020-08-21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "08e47ea76816f1a0d0729cebc9e875b09017c10a",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 11,
+                "total_in_resp": 15,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 16,
+                "total_in_icu": 26,
+                "nr_reporting": 15,
+                "total_in": 102,
+                "date": "2020-08-20"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "d3a193118ffbc94c6bd4684874a41d875823b162",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 16,
+                "total_in_resp": 15,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 7,
+                "total_in_icu": 27,
+                "nr_reporting": 15,
+                "total_in": 108,
+                "date": "2020-08-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "8072c6e7eae8ec397135ffe2393f85ead58cf4d2",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 16,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 11,
+                "total_in_icu": 25,
+                "nr_reporting": 15,
+                "total_in": 99,
+                "date": "2020-08-18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "f43cb49f7b16f71c6c56cabc0db73f873de3e7aa",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 2,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 23,
+                "nr_reporting": 15,
+                "total_in": 91,
+                "date": "2020-08-17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "6fd3c05f79fc074127701e16f15747215e9970ea",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 10,
+                "total_in_resp": 12,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 3,
+                "total_in_icu": 21,
+                "nr_reporting": 15,
+                "total_in": 92,
+                "date": "2020-08-16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "4694d8a94ad6f07dc054445a4e58ba3399f26318",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 10,
+                "total_in_resp": 13,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 9,
+                "total_in_icu": 22,
+                "nr_reporting": 15,
+                "total_in": 85,
+                "date": "2020-08-15"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "26195cc732068405d25dd02c0dc097302e99d43f",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 1,
+                "new_in": 9,
+                "total_in_resp": 12,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 8,
+                "total_in_icu": 20,
+                "nr_reporting": 15,
+                "total_in": 81,
+                "date": "2020-08-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "0db30f242f3e123c0f35c10a2701c6305b46a284",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 2,
+                "new_in": 10,
+                "total_in_resp": 9,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 11,
+                "total_in_icu": 17,
+                "nr_reporting": 15,
+                "total_in": 77,
+                "date": "2020-08-13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "c3ef3b5fd4b3eafbb624abb595e66c11fbb84db2",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 1,
+                "new_in": 10,
+                "total_in_resp": 7,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 10,
+                "total_in_icu": 15,
+                "nr_reporting": 15,
+                "total_in": 79,
+                "date": "2020-08-12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "72381014e953f91eb2e1a4fd8bc05f4c4dd83794",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 1,
+                "new_in": 12,
+                "total_in_resp": 5,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 16,
+                "total_in_icu": 14,
+                "nr_reporting": 15,
+                "total_in": 75,
+                "date": "2020-08-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "86b04f4d265ec9d4c795b428631c64a77e107a9c",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 1,
+                "new_in": 10,
+                "total_in_resp": 7,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 16,
+                "nr_reporting": 15,
+                "total_in": 81,
+                "date": "2020-08-10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "db239748ca6e057afe48dab3a51390a90f4ec036",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 3,
+                "total_in_resp": 4,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 0,
+                "total_in_icu": 14,
+                "nr_reporting": 15,
+                "total_in": 71,
+                "date": "2020-08-09"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "5d726fb26a20d42cc1affead2dad9db4e98095ab",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 10,
+                "total_in_resp": 4,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 12,
+                "total_in_icu": 12,
+                "nr_reporting": 15,
+                "total_in": 70,
+                "date": "2020-08-08"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "a1c8fa29d1f0f47fdc2b9187632dbe44bcefd243",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 9,
+                "total_in_resp": 5,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 3,
+                "total_in_icu": 12,
+                "nr_reporting": 15,
+                "total_in": 69,
+                "date": "2020-08-07"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "4e5927fe836c7d73b9a41627c31241ebb5c8f5d7",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 6,
+                "total_in_resp": 4,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 11,
+                "total_in_icu": 11,
+                "nr_reporting": 15,
+                "total_in": 62,
+                "date": "2020-08-06"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "722f8a97115445ad09da63fde11e145960a3f468",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 15,
+                "total_in_resp": 4,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 6,
+                "total_in_icu": 9,
+                "nr_reporting": 15,
+                "total_in": 68,
+                "date": "2020-08-05"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "a44dac1122ff0fd5f2e02d3b00e0e4617b53d047",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 8,
+                "total_in_resp": 3,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 9,
+                "total_in_icu": 9,
+                "nr_reporting": 15,
+                "total_in": 59,
+                "date": "2020-08-04"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "db869ad860a140090fbb90e7dede6755771cd55d",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 10,
+                "total_in_resp": 5,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 0,
+                "total_in_icu": 7,
+                "nr_reporting": 15,
+                "total_in": 65,
+                "date": "2020-08-03"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "cbdeed2c36a1b0ea61bc44ee9229f40f2f64e7f7",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 3,
+                "total_in_resp": 6,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 3,
+                "total_in_icu": 10,
+                "nr_reporting": 15,
+                "total_in": 56,
+                "date": "2020-08-02"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "16fa0d809bb0d2e86af8b7fae7bdfe9f65c784aa",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 3,
+                "total_in_resp": 5,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 10,
+                "nr_reporting": 15,
+                "total_in": 55,
+                "date": "2020-08-01"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "1a8f2dc556890b84c98e70a2781329d779f7b46c",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 2,
+                "total_in_resp": 5,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 4,
+                "total_in_icu": 9,
+                "nr_reporting": 15,
+                "total_in": 56,
+                "date": "2020-07-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "e17a759a4b366449a58b9221b99f37783cda413d",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 5,
+                "total_in_resp": 5,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 2,
+                "total_in_icu": 9,
+                "nr_reporting": 15,
+                "total_in": 56,
+                "date": "2020-07-30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "cba63ff6fe64d245b11199acb023aeaac7f5ce3a",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 11,
+                "total_in_resp": 4,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 2,
+                "total_in_icu": 11,
+                "nr_reporting": 15,
+                "total_in": 48,
+                "date": "2020-07-29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "8f73c1e6ed18f3f5466c930a5d259697526f12b3",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 8,
+                "total_in_resp": 4,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 2,
+                "total_in_icu": 11,
+                "nr_reporting": 15,
+                "total_in": 37,
+                "date": "2020-07-28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "0b89672fcaa4a0ab90eca5b64f6e9837ed985e0f",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 3,
+                "total_in_resp": 3,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 5,
+                "total_in_icu": 12,
+                "nr_reporting": 15,
+                "total_in": 32,
+                "date": "2020-07-27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "de4cda10732cedca1059818edd4f534fa4b053e4",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 3,
+                "total_in_resp": 3,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 0,
+                "total_in_icu": 12,
+                "nr_reporting": 15,
+                "total_in": 33,
+                "date": "2020-07-26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "97a814d758d4e34751e742d7bf08acd15b834ee9",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 4,
+                "total_in_resp": 3,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 5,
+                "total_in_icu": 10,
+                "nr_reporting": 15,
+                "total_in": 29,
+                "date": "2020-07-25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "6dae9c16df8c8bd6ba070a07b9850aa3a32a09fd",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 6,
+                "total_in_resp": 3,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 3,
+                "total_in_icu": 10,
+                "nr_reporting": 14,
+                "total_in": 35,
+                "date": "2020-07-24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "c609879f1d4b00fbf12fa4cd43b713f2773eaa9f",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 4,
+                "total_in_resp": 2,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 2,
+                "total_in_icu": 10,
+                "nr_reporting": 15,
+                "total_in": 34,
+                "date": "2020-07-23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        },
+        {
+            "datasetid": "covid-19-pandemic-belgium-hosp-province@public",
+            "recordid": "02352056f8cc581b0782f5db7da501e8980f5aa6",
+            "fields": {
+                "province": "Brussels",
+                "total_in_ecmo": 0,
+                "new_in": 2,
+                "total_in_resp": 2,
+                "region": "Brussels",
+                "geo_point_2d": [
+                    50.8365663663,
+                    4.36943412254
+                ],
+                "new_out": 0,
+                "total_in_icu": 8,
+                "nr_reporting": 15,
+                "total_in": 26,
+                "date": "2020-07-22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.36943412254,
+                    50.8365663663
+                ]
+            },
+            "record_timestamp": "2020-10-30T10:55:05.060000+00:00"
+        }
+    ],
+    "facet_groups": [
+        {
+            "facets": [
+                {
+                    "count": 229,
+                    "path": "2020",
+                    "state": "displayed",
+                    "name": "2020"
+                }
+            ],
+            "name": "date"
+        },
+        {
+            "facets": [
+                {
+                    "count": 229,
+                    "path": "Brussels",
+                    "state": "displayed",
+                    "name": "Brussels"
+                }
+            ],
+            "name": "province"
+        },
+        {
+            "facets": [
+                {
+                    "count": 229,
+                    "path": "Brussels",
+                    "state": "refined",
+                    "name": "Brussels"
+                }
+            ],
+            "name": "region"
+        }
+    ]
+}
