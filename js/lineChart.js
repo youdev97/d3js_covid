@@ -55,7 +55,7 @@ class LineChart {
             .attr("x", -170)
             .attr("font-size", "20px")
             .attr("text-anchor", "middle")
-            .text("New in hospitals")
+            .text("Hospital entries")
 
         // scales
         vis.x = d3.scaleTime().range([0, vis.WIDTH])
@@ -99,20 +99,12 @@ class LineChart {
 
         // fix for format values
         const formatSi = d3.format(".2s")
-        function formatAbbreviation(x) {
-            const s = formatSi(x)
-            switch (s[s.length - 1]) {
-                case "G": return s.slice(0, -1) + "B" // billions
-                case "k": return s.slice(0, -1) + "K" // thousands
-            }
-            return s
-        }
 
         // update axes
         vis.xAxisCall.scale(vis.x)
         vis.xAxis.transition(vis.t).call(vis.xAxisCall)
         vis.yAxisCall.scale(vis.y)
-        vis.yAxis.transition(vis.t).call(vis.yAxisCall.tickFormat(formatAbbreviation))
+        vis.yAxis.transition(vis.t).call(vis.yAxisCall)
 
         // Path generator
         vis.line = d3.line()
