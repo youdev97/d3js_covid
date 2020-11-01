@@ -2,10 +2,12 @@
 *    lineChart.js
 *    OOP   
 */
-class LineChart {
+class lineChart {
     //constructor
-    constructor(_parentElement) {
+    constructor(_parentElement, _variable, _title) {
         this.parentElement = _parentElement
+        this.variable = _variable
+        this.title = _title
         this.initVis()
     }
 
@@ -55,7 +57,7 @@ class LineChart {
             .attr("x", -170)
             .attr("font-size", "20px")
             .attr("text-anchor", "middle")
-            .text("Hospital entries")
+            .text(vis.title)
 
         // scales
         vis.x = d3.scaleTime().range([0, vis.WIDTH])
@@ -91,14 +93,11 @@ class LineChart {
         //console.log(filteredData)
 
         // update scales
-        vis.x.domain(d3.extent(vis.filteredData, d => d.fields.date))
+        vis.x.domain(d3.extent(vis.filteredData, d => d.date))
         vis.y.domain([
-            d3.min(vis.filteredData, d => d.fields.new_in),
-            d3.max(vis.filteredData, d => d.fields.new_in)
+            d3.min(vis.filteredData, d => d[vis.variable]),
+            d3.max(vis.filteredData, d => d[vis.variable])
         ])
-
-        // fix for format values
-        const formatSi = d3.format(".2s")
 
         // update axes
         vis.xAxisCall.scale(vis.x)
@@ -108,8 +107,8 @@ class LineChart {
 
         // Path generator
         vis.line = d3.line()
-            .x(d => vis.x(d.fields.date))
-            .y(d => vis.y(d.fields.new_in))
+            .x(d => vis.x(d.date))
+            .y(d => vis.y(d[vis.variable]))
 
         // Update our line path
         vis.g.select(".line")

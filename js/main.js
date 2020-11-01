@@ -3,6 +3,7 @@
  */
 
 let lineChart1
+let lineChart2
 
 // time parsers/formatters
 const parseTime = d3.timeParse("%Y-%m-%d")
@@ -15,16 +16,18 @@ d3.json(url).then(function (data) {
     data = Object.values(data)
     console.log(data)
     formattedData = data[2].filter(date => {
-        const dataExists = (date.fields.new_in && date.fields.date)
+        const dataExists = (date.fields.new_in && date.fields.date && date.fields.total_in)
         return dataExists
     }).map(date => {
         date.fields.new_in = Number(date.fields.new_in)
+        date.fields.total_in = Number(date.fields.total_in)
         date.fields.date = parseTime(date.fields.date)
-        return date
+        return date.fields
     })
     console.log(formattedData)
     // run the visualization for the first time
-    lineChart1 = new LineChart("#chart-area")
+    lineChart1 = new lineChart("#chart-area", "new_in", "Hospital new entries")
+    lineChart2 = new lineChart("#chart-area", "total_in", "Total in")
 }).catch(function (error) {
     console.log("error getting json", error)
 })
