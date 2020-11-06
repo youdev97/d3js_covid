@@ -9,7 +9,6 @@ let lineChart2
 const parseTime = d3.timeParse("%Y-%m-%d")
 const formatTime = d3.timeFormat("%d-%m-%Y")
 
-
 var url = "https://data.opendatasoft.com/api/records/1.0/search/?dataset=covid-19-pandemic-belgium-hosp-province%40public&rows=200&sort=date&facet=date&facet=province&facet=region&refine.region=Brussels"
 d3.json(url).then(function (data) {
     // clean data
@@ -27,7 +26,7 @@ d3.json(url).then(function (data) {
     console.log(formattedData)
     // run the visualization for the first time
     lineChart1 = new lineChart("#chart-area", "new_in", "Hospital new entries")
-    lineChart2 = new lineChart("#chart-area", "total_in", "Total in")
+    //lineChart2 = new lineChart("#chart-area2", "total_in", "Total in")
 }).catch(function (error) {
     console.log("error getting json", error)
 })
