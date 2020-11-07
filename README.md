@@ -6,9 +6,9 @@ Adapted the code to OOP
   
 ### Tech
 [D3.js] - JavaScript library for visualizing data with HTML, SVG, and CSS.
-[Bedata] - openData pandemic belgium hospitalisations
+[openData] - openData pandemic belgium hospitalisations API
 
 
 
-[BeData]: <https://data.opendatasoft.com/explore/dataset/covid-19-pandemic-belgium-hosp-province%40public/api/?sort=date>
+[openData]: <https://data.opendatasoft.com/explore/dataset/covid-19-pandemic-belgium-hosp-province%40public/api/?sort=date>
 [D3.js]: <https://d3js.org/>
