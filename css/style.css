@@ -4,7 +4,7 @@
 #title {
   text-align: center;
 }
-
+/****** Line chart ******/
 .overlay {
   fill: none;
   pointer-events: all;
@@ -27,3 +27,24 @@
   stroke-width: 3px;
   stroke: grey;
 }
+
+/************/
+
+/****** Map ******/
+.region {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 0.5;
+}
+
+.region:hover {
+  cursor: pointer;
+  fill: #555555;
+}
+
+#map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/************/

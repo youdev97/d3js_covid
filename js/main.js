@@ -4,7 +4,7 @@
 
 let lineChart1
 let lineChart2
-
+let mapChart1
 // time parsers/formatters
 const parseTime = d3.timeParse("%Y-%m-%d")
 const formatTime = d3.timeFormat("%d-%m-%Y")
@@ -23,10 +23,10 @@ d3.json("data/data.json").then(function (data) {
         date.fields.total_in = Number(date.fields.total_in)
         date.fields.date = parseTime(date.fields.date)
         return date.fields
-    }).sort(function(a, b) {
+    }).sort(function (a, b) {
         return a.date - b.date;
     })
-    
+
     console.log(formattedData)
     // run the visualization for the first time
     lineChart1 = new lineChart("#chart-area", "new_in", "Hospital new entries")
@@ -35,6 +35,15 @@ d3.json("data/data.json").then(function (data) {
     console.log("error getting json", error)
 })
 
+
+d3.json("data/belgium.json").then(function (values) {
+    console.log(values)
+
+    formattedValues = values
+    mapChart1= new mapChart("#map")
+}).catch(function (error) {
+    console.error("error getting json", error)
+})
 
 function updateCharts() {
     lineChart1.wrangleData()
