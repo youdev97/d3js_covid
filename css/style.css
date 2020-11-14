@@ -39,7 +39,7 @@
 
 .region:hover {
   cursor: pointer;
-  fill: #555555;
+  fill: gray;
 }
 
 #map {

@@ -1,13 +1,13 @@
 class mapChart {
   // constructor
-  constructor (_parentElement, _variable, _title) {
+  constructor(_parentElement, _variable, _title) {
     this.parentElement = _parentElement
     this.variable = _variable
     this.title = _title
     this.initVis()
   }
 
-  initVis () {
+  initVis() {
     const vis = this
 
     vis.WIDTH = 800
@@ -34,14 +34,18 @@ class mapChart {
     vis.wrangleData()
   }
 
-  wrangleData () {
+  wrangleData() {
     const vis = this
     vis.filteredValues = formattedValues
     vis.updateVis()
   }
 
-  updateVis () {
+  updateVis() {
     const vis = this
+
+    vis.tooltip = vis.g.append("div")
+      .attr("class", "tooltip")
+    
     vis.projection = d3.geoMercator()
       .fitSize([vis.WIDTH, vis.HEIGHT], vis.filteredValues)
 
@@ -54,5 +58,13 @@ class mapChart {
       .append('path')
       .attr('class', 'region')
       .attr('d', vis.path)
+      .on("mouseover", function (event, d) {
+        //console.log(d)
+        //console.log(event)
+        if(event.properties.BRK_NAME == "Brussels") {
+          const totalPatient = formattedData[formattedData.length - 1].total_in
+          //console.log(totalPatient)
+        }
+      })
   }
 }
