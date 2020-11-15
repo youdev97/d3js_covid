@@ -14,7 +14,7 @@ class mapChart {
     vis.HEIGHT = 650
     vis.scale = 5000
     vis.offset = [vis.WIDTH / 2, vis.HEIGHT / 2]
-    vis.center = [0.00, 50.64]
+    vis.center = [0.00, 50.64] //approximative center
 
     vis.svg = d3.select('#map').append('svg')
       .attr('width', vis.WIDTH)
@@ -22,6 +22,7 @@ class mapChart {
 
     vis.g = vis.svg.append('g')
 
+    //approximative projection
     vis.projection = d3.geoMercator()
       .fitSize([vis.WIDTH, vis.HEIGHT])
       .scale(vis.scale)
@@ -45,10 +46,12 @@ class mapChart {
 
     vis.tooltip = vis.g.append("div")
       .attr("class", "tooltip")
-    
+
+    //better projection
     vis.projection = d3.geoMercator()
       .fitSize([vis.WIDTH, vis.HEIGHT], vis.filteredValues)
 
+    //drawing path
     vis.path = d3.geoPath()
       .projection(vis.projection)
 
@@ -59,12 +62,28 @@ class mapChart {
       .attr('class', 'region')
       .attr('d', vis.path)
       .on("mouseover", function (event, d) {
-        //console.log(d)
-        //console.log(event)
-        if(event.properties.BRK_NAME == "Brussels") {
-          const totalPatient = formattedData[formattedData.length - 1].total_in
-          //console.log(totalPatient)
+        if (event.properties.BRK_NAME == "Brussels") {
+          const lastReport = formattedData['Brussels'][0]
+          console.log(lastReport.total_in)
+        }
+        if (event.properties.BRK_NAME == "Flemish") {
+          vis.getLastRegionData('Flanders')
+        }
+        if (event.properties.BRK_NAME == "Walloon") {
+          vis.getLastRegionData('Wallonia')
         }
       })
+  }
+
+  //sum tdata of subunits of a same region & date
+  getLastRegionData(region) {
+    const lastReport = formattedData[region][0]
+    let totalIn = lastReport.total_in
+    let i = 1
+    while (formatTime(lastReport.date) == formatTime(formattedData[region][i].date)) {
+      totalIn += formattedData[region][i].total_in
+      i++
+    }
+    console.log(totalIn)
   }
 }

@@ -8,7 +8,7 @@ let mapChart1
 let formattedData
 // time parsers/formatters
 const parseTime = d3.timeParse('%Y-%m-%d')
-//const formatTime = d3.timeFormat('%d-%m-%Y')
+const formatTime = d3.timeFormat('%d-%m-%Y')
 
 let url = 'https://data.opendatasoft.com/api/records/1.0/search/?dataset=covid-19-pandemic-belgium-hosp-province%40public&rows=200&sort=date&facet=date&facet=province&facet=region'
 d3.json('data/data.json').then(function (data) {

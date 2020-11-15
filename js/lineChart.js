@@ -25,9 +25,6 @@ class lineChart {
     vis.g = vis.svg.append('g')
       .attr('transform', `translate(${vis.MARGIN.LEFT}, ${vis.MARGIN.TOP})`)
 
-    // time parsers/formatters
-    vis.parseTime = d3.timeParse('%Y-%m-%d')
-    vis.formatTime = d3.timeFormat('%d-%m-%Y')
     // for tooltip
     vis.bisectDate = d3.bisector(d => {
       return d.date
