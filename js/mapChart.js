@@ -69,21 +69,21 @@ class mapChart {
       }
       vis.tooltip
         .html(`<p>mouse is on</p>`)
-        .style("left", (d3.mouse(this)[0] + 130) + "px")
-        .style("top", (d3.mouse(this)[1] -15) + "px")
+        .style("left", (d3.mouse(this)[0] + 100) + "px")
+        .style("top", (d3.mouse(this)[1]) + "px")
         .style("opacity", 1)
     }
 
     //tooltip following mouse
-    let mousemove = function(event, d) {
+    let mousemove = function (event, d) {
       vis.tooltip
         .html(`<p>test</p>`)
-        .style("left", (d3.mouse(this)[0]+130) + "px")
-        .style("top", (d3.mouse(this)[1] -15) + "px")
+        .style("left", (d3.mouse(this)[0] + 100) + "px")
+        .style("top", (d3.mouse(this)[1]) + "px")
     }
 
     //removing tooltip when mouse leaving
-    let mouseleave = function(d) {
+    let mouseleave = function (d) {
       vis.tooltip.style("opacity", 0)
     }
 
