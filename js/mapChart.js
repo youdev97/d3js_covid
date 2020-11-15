@@ -22,6 +22,17 @@ class mapChart {
 
     vis.g = vis.svg.append('g')
 
+    //setting up the tooltip
+    vis.tooltip = d3.select('#map')
+      .append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0)
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px")
+
     //approximative projection
     vis.projection = d3.geoMercator()
       .fitSize([vis.WIDTH, vis.HEIGHT])
@@ -44,8 +55,37 @@ class mapChart {
   updateVis() {
     const vis = this
 
-    vis.tooltip = vis.g.append("div")
-      .attr("class", "tooltip")
+    //mouseOver tooltip + get data
+    let mouseover = function (event, d) {
+      if (event.properties.BRK_NAME == "Brussels") {
+        const lastReport = formattedData['Brussels'][0]
+        console.log(lastReport.total_in)
+      }
+      if (event.properties.BRK_NAME == "Flemish") {
+        vis.getLastRegionData('Flanders')
+      }
+      if (event.properties.BRK_NAME == "Walloon") {
+        vis.getLastRegionData('Wallonia')
+      }
+      vis.tooltip
+        .html(`<p>mouse is on</p>`)
+        .style("left", (d3.mouse(this)[0] + 130) + "px")
+        .style("top", (d3.mouse(this)[1] -15) + "px")
+        .style("opacity", 1)
+    }
+
+    //tooltip following mouse
+    let mousemove = function(event, d) {
+      vis.tooltip
+        .html(`<p>test</p>`)
+        .style("left", (d3.mouse(this)[0]+130) + "px")
+        .style("top", (d3.mouse(this)[1] -15) + "px")
+    }
+
+    //removing tooltip when mouse leaving
+    let mouseleave = function(d) {
+      vis.tooltip.style("opacity", 0)
+    }
 
     //better projection
     vis.projection = d3.geoMercator()
@@ -61,19 +101,11 @@ class mapChart {
       .append('path')
       .attr('class', 'region')
       .attr('d', vis.path)
-      .on("mouseover", function (event, d) {
-        if (event.properties.BRK_NAME == "Brussels") {
-          const lastReport = formattedData['Brussels'][0]
-          console.log(lastReport.total_in)
-        }
-        if (event.properties.BRK_NAME == "Flemish") {
-          vis.getLastRegionData('Flanders')
-        }
-        if (event.properties.BRK_NAME == "Walloon") {
-          vis.getLastRegionData('Wallonia')
-        }
-      })
+      .on('mouseover', mouseover)
+      .on('mousemove', mousemove)
+      .on('mouseleave', mouseleave)
   }
+
 
   //sum tdata of subunits of a same region & date
   getLastRegionData(region) {
