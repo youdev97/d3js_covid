@@ -81,7 +81,7 @@ class lineChart {
   // selecting/filtering the data with an interaction slider, buttons etc
   wrangleData () {
     const vis = this
-    vis.filteredData = formattedData['Brussels']
+    vis.filteredData = formattedData.Brussels
     vis.updateVis()
   }
 
@@ -144,7 +144,7 @@ class lineChart {
       const x0 = vis.x.invert(d3.mouse(this)[0])
       const i = vis.bisectDate(vis.filteredData, x0, 1)
       const d0 = vis.filteredData[i - 1]
-      const d1 = i == vis.filteredData.length ? vis.filteredData[i - 1] : vis.filteredData[i] // avoid error on last index
+      const d1 = i === vis.filteredData.length ? vis.filteredData[i - 1] : vis.filteredData[i] // avoid error on last index
       const d = x0 - d0.date > d1.date - x0 ? d1 : d0
       vis.focus.attr('transform', `translate(${vis.x(d.date)}, ${vis.y(d[vis.variable])})`)
       vis.focus.select('text').text(d[vis.variable])
