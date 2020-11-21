@@ -47,7 +47,15 @@ class mapChart {
 
   wrangleData () {
     const vis = this
-    vis.filteredValues = formattedValues
+    vis.data = { ...formattedData }
+    vis.geoData = geoData
+    // sort by date desc
+    Object.values(vis.data).map(region => {
+      region.sort(function (a, b) {
+        return b.date - a.date
+      })
+    })
+    console.log(vis.data)
     vis.updateVis()
   }
 
@@ -56,29 +64,32 @@ class mapChart {
 
     // mouseOver tooltip + get data
     const mouseover = function (event, d) {
+      let lastReport = {}
       if (event.properties.BRK_NAME === 'Brussels') {
-        const lastReport = formattedData.Brussels[0]
-        console.log(lastReport.total_in)
+        lastReport = vis.data.Brussels[0]
+      } else if (event.properties.BRK_NAME === 'Flemish') {
+        lastReport = vis.getLastRegionData('Flanders')
+      } else if (event.properties.BRK_NAME === 'Walloon') {
+        lastReport = vis.getLastRegionData('Wallonia')
       }
-      if (event.properties.BRK_NAME === 'Flemish') {
-        vis.getLastRegionData('Flanders')
-      }
-      if (event.properties.BRK_NAME === 'Walloon') {
-        vis.getLastRegionData('Wallonia')
-      }
+      // console.log(lastReport)
       vis.tooltip
-        .html('<p>mouse is on</p>')
-        .style('left', (d3.mouse(this)[0] + 100) + 'px')
-        .style('top', (d3.mouse(this)[1]) + 'px')
+        // .html('<p>mouse is over</p>')
+        .html(`<p>Total in : ${lastReport.total_in}</p>
+               <p>Total in Resp : ${lastReport.total_in_resp}</p>
+               <p>New in : ${lastReport.new_in}</p>
+               <p>New out : ${lastReport.new_out}</p>`)
+        .style('left', (d3.mouse(this)[0]) + 'px')
+        .style('top', (d3.mouse(this)[1] + 20) + 'px')
         .style('opacity', 1)
     }
 
     // tooltip following mouse
     const mousemove = function (event, d) {
       vis.tooltip
-        .html('<p>test</p>')
-        .style('left', (d3.mouse(this)[0] + 100) + 'px')
-        .style('top', (d3.mouse(this)[1]) + 'px')
+        // .html('<p>mouse is moving</p>')
+        .style('left', (d3.mouse(this)[0]) + 'px')
+        .style('top', (d3.mouse(this)[1] + 20) + 'px')
     }
 
     // removing tooltip when mouse leaving
@@ -88,14 +99,14 @@ class mapChart {
 
     // better projection
     vis.projection = d3.geoMercator()
-      .fitSize([vis.WIDTH, vis.HEIGHT], vis.filteredValues)
+      .fitSize([vis.WIDTH, vis.HEIGHT], vis.geoData)
 
     // drawing path
     vis.path = d3.geoPath()
       .projection(vis.projection)
 
     vis.g.selectAll('path')
-      .data(vis.filteredValues.features)
+      .data(vis.geoData.features)
       .enter()
       .append('path')
       .attr('class', 'region')
@@ -105,15 +116,19 @@ class mapChart {
       .on('mouseleave', mouseleave)
   }
 
-  // sum tdata of subunits of a same region & date
+  // sum data of subunits of a same region & date
   getLastRegionData (region) {
-    const lastReport = formattedData[region][0]
-    let totalIn = lastReport.total_in
+    const vis = this
+    const lastReport = vis.data[region][0]
+    let { total_in, new_in, new_out, total_in_resp } = lastReport
     let i = 1
-    while (formatTime(lastReport.date) === formatTime(formattedData[region][i].date)) {
-      totalIn += formattedData[region][i].total_in
+    while (formatTime(lastReport.date) === formatTime(vis.data[region][i].date)) {
+      total_in += vis.data[region][i].total_in
+      total_in_resp += vis.data[region][i].total_in_resp
+      new_in += vis.data[region][i].new_in
+      new_out += vis.data[region][i].new_out
       i++
     }
-    console.log(totalIn)
+    return { total_in, total_in_resp, new_in, new_out }
   }
 }

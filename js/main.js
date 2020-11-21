@@ -6,6 +6,7 @@ let lineChart1
 let lineChart2
 let mapChart1
 let formattedData
+let geoData
 // time parsers/formatters
 const parseTime = d3.timeParse('%Y-%m-%d')
 const formatTime = d3.timeFormat('%d-%m-%Y')
@@ -22,7 +23,6 @@ d3.json('data/data.json').then(function (data) {
     return r
   }, Object.create(null))
 
-  // console.log(dataByRegion)
   // get Brussel's region data filter and format fields and sort by date ascending
   formattedData = {}
   Object.keys(dataByRegion).forEach(region => {
@@ -43,21 +43,20 @@ d3.json('data/data.json').then(function (data) {
 
   // console.log(formattedData)
   // run the visualization for the first time
-  lineChart1 = new lineChart('#chart-area', 'new_in', 'Hospital new entries')
-  lineChart2 = new lineChart('#chart-area2', 'total_in', 'Total of patients ')
-}).catch(function (error) {
-  console.log('error getting json', error)
+  lineChart1 = new lineChart('#chart-area', 'new_in', 'Hospital covid-19 new entries')
+  lineChart2 = new lineChart('#chart-area2', 'total_in', 'Total of covid-19 patients ')
 })
 
 d3.json('data/belgium.json').then(function (values) {
-  console.log(values)
-
-  formattedValues = values
+  geoData = values
   mapChart1 = new mapChart('#map')
 }).catch(function (error) {
-  console.error('error getting json', error)
+  console.error('error getting map json', error)
 })
 
+// update charts after selecting or filtering
 function updateCharts () {
   lineChart1.wrangleData()
+  lineChart2.wrangleData()
+  mapChart1.wrangleData()
 }
