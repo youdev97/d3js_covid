@@ -75,7 +75,8 @@ class mapChart {
       // console.log(lastReport)
       vis.tooltip
         // .html('<p>mouse is over</p>')
-        .html(`<p>Total in : ${lastReport.total_in}</p>
+        .html(`<p>${formatTime(lastReport.date)}</p>
+               <p>Total in : ${lastReport.total_in}</p>
                <p>Total in Resp : ${lastReport.total_in_resp}</p>
                <p>New in : ${lastReport.new_in}</p>
                <p>New out : ${lastReport.new_out}</p>`)
@@ -120,7 +121,7 @@ class mapChart {
   getLastRegionData(region) {
     const vis = this
     const lastReport = vis.data[region][0]
-    let { total_in, new_in, new_out, total_in_resp } = lastReport
+    let { total_in, new_in, new_out, total_in_resp, date } = lastReport
     let i = 1
     while (formatTime(lastReport.date) === formatTime(vis.data[region][i].date)) {
       total_in += vis.data[region][i].total_in
@@ -129,6 +130,6 @@ class mapChart {
       new_out += vis.data[region][i].new_out
       i++
     }
-    return { total_in, total_in_resp, new_in, new_out }
+    return { total_in, total_in_resp, new_in, new_out, date }
   }
 }
