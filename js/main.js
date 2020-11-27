@@ -11,8 +11,9 @@ let geoData
 const parseTime = d3.timeParse('%Y-%m-%d')
 const formatTime = d3.timeFormat('%d/%m/%Y')
 
-const url = 'https://data.opendatasoft.com/api/records/1.0/search/?dataset=covid-19-pandemic-belgium-hosp-province%40public&rows=200&sort=date&facet=date&facet=province&facet=region'
-d3.json('data/data.json').then(function (data) {
+const url = 'https://data.opendatasoft.com/api/records/1.0/search/?dataset=covid-19-pandemic-belgium-hosp-province%40public&rows=1200&sort=date&facet=date&facet=province&facet=region'
+//const url = 'data/data.json'
+d3.json(url).then(function (data) {
   // all data => to an array
   data = Object.values(data)
 
@@ -54,10 +55,13 @@ d3.json('data/data.json').then(function (data) {
 })
 
 
-
 // update charts after selecting or filtering
 function updateCharts () {
   lineChart1.wrangleData()
   lineChart2.wrangleData()
+}
+
+// update charts after selecting or filtering
+function updateMap () {
   mapChart1.wrangleData()
 }

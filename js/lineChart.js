@@ -65,6 +65,7 @@ class lineChart {
 
     // axis generators
     vis.xAxisCall = d3.axisBottom()
+      .ticks(5)
     vis.yAxisCall = d3.axisLeft()
       .ticks(6)
 
