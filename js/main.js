@@ -39,20 +39,21 @@ d3.json('data/data.json').then(function (data) {
         return a.date - b.date
       })
   })
-  console.log(formattedData)
+  //console.log(formattedData) ascending date
 
-  // console.log(formattedData)
   // run the visualization for the first time
   lineChart1 = new lineChart('#chart-area', 'new_in', 'Hospital covid-19 new entries')
   lineChart2 = new lineChart('#chart-area2', 'total_in', 'Total of covid-19 patients ')
+
+  d3.json('data/belgium.json').then(function (values) {
+    geoData = values
+    mapChart1 = new mapChart('#map')
+  }).catch(function (error) {
+    console.error('error getting map json', error)
+  })
 })
 
-d3.json('data/belgium.json').then(function (values) {
-  geoData = values
-  mapChart1 = new mapChart('#map')
-}).catch(function (error) {
-  console.error('error getting map json', error)
-})
+
 
 // update charts after selecting or filtering
 function updateCharts () {

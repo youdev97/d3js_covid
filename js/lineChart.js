@@ -81,7 +81,7 @@ class lineChart {
   // selecting/filtering the data with an interaction slider, buttons etc
   wrangleData () {
     const vis = this
-    vis.filteredData = formattedData.Brussels
+    vis.filteredData = [...formattedData['Brussels']]
     vis.updateVis()
   }
 

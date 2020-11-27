@@ -1,13 +1,13 @@
 class mapChart {
   // constructor
-  constructor (_parentElement, _variable, _title) {
+  constructor(_parentElement, _variable, _title) {
     this.parentElement = _parentElement
     this.variable = _variable
     this.title = _title
     this.initVis()
   }
 
-  initVis () {
+  initVis() {
     const vis = this
     vis.WIDTH = 800
     vis.HEIGHT = 650
@@ -45,7 +45,7 @@ class mapChart {
     vis.wrangleData()
   }
 
-  wrangleData () {
+  wrangleData() {
     const vis = this
     vis.data = { ...formattedData }
     vis.geoData = geoData
@@ -55,11 +55,11 @@ class mapChart {
         return b.date - a.date
       })
     })
-    console.log(vis.data)
+    //console.log(vis.data)
     vis.updateVis()
   }
 
-  updateVis () {
+  updateVis() {
     const vis = this
 
     // mouseOver tooltip + get data
@@ -117,7 +117,7 @@ class mapChart {
   }
 
   // sum data of subunits of a same region & date
-  getLastRegionData (region) {
+  getLastRegionData(region) {
     const vis = this
     const lastReport = vis.data[region][0]
     let { total_in, new_in, new_out, total_in_resp } = lastReport
