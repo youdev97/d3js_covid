@@ -4,14 +4,14 @@
 */
 class lineChart {
   // constructor
-  constructor (_parentElement, _variable, _title) {
+  constructor(_parentElement, _variable, _title) {
     this.parentElement = _parentElement
     this.variable = _variable
     this.title = _title
     this.initVis()
   }
 
-  initVis () {
+  initVis() {
     const vis = this
 
     vis.MARGIN = { LEFT: 100, RIGHT: 100, TOP: 50, BOTTOM: 100 }
@@ -19,8 +19,9 @@ class lineChart {
     vis.HEIGHT = 500 - vis.MARGIN.TOP - vis.MARGIN.BOTTOM
 
     vis.svg = d3.select(vis.parentElement).append('svg')
-      .attr('width', vis.WIDTH + vis.MARGIN.LEFT + vis.MARGIN.RIGHT)
-      .attr('height', vis.HEIGHT + vis.MARGIN.TOP + vis.MARGIN.BOTTOM)
+      //.attr('width', vis.WIDTH + vis.MARGIN.LEFT + vis.MARGIN.RIGHT)
+      //.attr('height', vis.HEIGHT + vis.MARGIN.TOP + vis.MARGIN.BOTTOM)
+      .attr("viewBox", `0 0 ${vis.WIDTH + vis.MARGIN.LEFT + vis.MARGIN.RIGHT} ${vis.HEIGHT + vis.MARGIN.TOP + vis.MARGIN.BOTTOM}`)
 
     vis.g = vis.svg.append('g')
       .attr('transform', `translate(${vis.MARGIN.LEFT}, ${vis.MARGIN.TOP})`)
@@ -80,14 +81,14 @@ class lineChart {
   }
 
   // selecting/filtering the data with an interaction slider, buttons etc
-  wrangleData () {
+  wrangleData() {
     const vis = this
     vis.filteredData = [...formattedData['Brussels']]
     vis.updateVis()
   }
 
   // updateVis method - updating our elements to match the new data.
-  updateVis () {
+  updateVis() {
     const vis = this
     vis.t = d3.transition().duration(1000)
 
@@ -141,7 +142,7 @@ class lineChart {
       .on('mouseout', () => vis.focus.style('display', 'none'))
       .on('mousemove', mousemove)
 
-    function mousemove () {
+    function mousemove() {
       const x0 = vis.x.invert(d3.mouse(this)[0])
       const i = vis.bisectDate(vis.filteredData, x0, 1)
       const d0 = vis.filteredData[i - 1]
