@@ -12,9 +12,9 @@ const parseTime = d3.timeParse('%Y-%m-%d')
 const formatTime = d3.timeFormat('%d/%m/%Y')
 
 const url = 'https://data.opendatasoft.com/api/records/1.0/search/?dataset=covid-19-pandemic-belgium-hosp-province%40public&rows=1200&sort=date&facet=date&facet=province&facet=region'
-//const url = 'data/data.json'
+//const url = 'data/data.json' in case of broken url test with this
 d3.json(url).then(function (data) {
-  // all data => to an array
+  // wrapping data into an array
   data = Object.values(data)
 
   // sort the array by Region becoming the key
@@ -24,7 +24,7 @@ d3.json(url).then(function (data) {
     return r
   }, Object.create(null))
 
-  // get Brussel's region data filter and format fields and sort by date ascending
+  // Filter, format and sort fields by date ascending
   formattedData = {}
   Object.keys(dataByRegion).forEach(region => {
     formattedData[region] = dataByRegion[region]
@@ -40,12 +40,13 @@ d3.json(url).then(function (data) {
         return a.date - b.date
       })
   })
-  //console.log(formattedData) ascending date
+  //console.log(formattedData)
 
-  // run the visualization for the first time
+  // data is ready, building the line charts
   lineChart1 = new lineChart('#chart-area', 'new_in', 'Hospital covid-19 new entries')
   lineChart2 = new lineChart('#chart-area2', 'total_in', 'Total of covid-19 patients ')
 
+  // build the map chart
   d3.json('data/belgium.json').then(function (values) {
     geoData = values
     mapChart1 = new mapChart('#map')
@@ -55,13 +56,13 @@ d3.json(url).then(function (data) {
 })
 
 
-// update charts after selecting or filtering
+// update line charts on some buttons or select-box events
 function updateCharts () {
   lineChart1.wrangleData()
   lineChart2.wrangleData()
 }
 
-// update charts after selecting or filtering
+// update map ...
 function updateMap () {
   mapChart1.wrangleData()
 }

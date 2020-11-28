@@ -92,8 +92,6 @@ class lineChart {
     const vis = this
     vis.t = d3.transition().duration(1000)
 
-    // console.log(filteredData)
-
     // update scales
     vis.x.domain(d3.extent(vis.filteredData, d => d.date))
     vis.y.domain([
@@ -111,7 +109,7 @@ class lineChart {
     vis.g.select('.focus').remove()
     vis.g.select('.overlay').remove()
 
-    /** ****************************** Tooltip Code ********************************/
+    /********************************* Tooltip Code ********************************/
 
     vis.focus = vis.g.append('g')
       .attr('class', 'focus')
@@ -154,7 +152,7 @@ class lineChart {
       vis.focus.select('.y-hover-line').attr('x2', -vis.x(d.date))
     }
 
-    /** ****************************** Tooltip Code ********************************/
+    /********************************* Tooltip Code ********************************/
 
     // Path generator
     vis.line = d3.line()
