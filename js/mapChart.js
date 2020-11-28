@@ -9,15 +9,21 @@ class mapChart {
 
   initVis() {
     const vis = this
-    vis.WIDTH = 800
-    vis.HEIGHT = 650
+    vis.WIDTH = $('#map').width() //take space of the available width's space depending of the device
+    vis.mapRatio = 0.5
+    vis.HEIGHT = vis.WIDTH * vis.mapRatio
     vis.scale = 5000
     vis.offset = [vis.WIDTH / 2, vis.HEIGHT / 2]
     vis.center = [0.00, 50.64] // approximative center
 
+    //setting up size of the svg
     vis.svg = d3.select('#map').append('svg')
       .attr('width', vis.WIDTH)
       .attr('height', vis.HEIGHT)
+
+    // may be usefull to display some text with variables
+    //vis.svg.append("text").attr("x", 0).attr("y", 130).text("variable A").style("font-size", "15px").attr("alignment-baseline","middle")
+    //vis.svg.append("text").attr("x", 0).attr("y", 160).text("variable B").style("font-size", "15px").attr("alignment-baseline","middle")
 
     vis.g = vis.svg.append('g')
 
@@ -30,7 +36,8 @@ class mapChart {
       .style('border', 'solid')
       .style('border-width', '2px')
       .style('border-radius', '5px')
-      .style('padding', '5px')
+      .style('padding', '10px 0px 0px 2px')
+      .style('line-height', '1px')
 
     // approximative projection
     vis.projection = d3.geoMercator()
@@ -49,7 +56,7 @@ class mapChart {
     const vis = this
     vis.data = { ...formattedData }
     vis.geoData = geoData
-    // sort by date desc
+    // sort by date desc because we want recent data
     Object.values(vis.data).map(region => {
       region.sort(function (a, b) {
         return b.date - a.date
@@ -62,7 +69,7 @@ class mapChart {
   updateVis() {
     const vis = this
 
-    // mouseOver tooltip + get data
+    // mouseOver tooltip & getting data for the 3 belgium's region
     const mouseover = function (event, d) {
       let lastReport = {}
       if (event.properties.BRK_NAME === 'Brussels') {
@@ -72,7 +79,7 @@ class mapChart {
       } else if (event.properties.BRK_NAME === 'Walloon') {
         lastReport = vis.getLastRegionData('Wallonia')
       }
-      // console.log(lastReport)
+      //console.log(lastReport)
       vis.tooltip
         // .html('<p>mouse is over</p>')
         .html(`<p>${formatTime(lastReport.date)}</p>
@@ -80,8 +87,8 @@ class mapChart {
                <p>Total in Resp : ${lastReport.total_in_resp}</p>
                <p>New in : ${lastReport.new_in}</p>
                <p>New out : ${lastReport.new_out}</p>`)
-        .style('left', (d3.mouse(this)[0]) + 'px')
-        .style('top', (d3.mouse(this)[1] + 20) + 'px')
+        .style('left', (d3.mouse(this)[0] + 10) + 'px')
+        .style('top', (d3.mouse(this)[1] + 70) + 'px')
         .style('opacity', 1)
     }
 
@@ -89,23 +96,22 @@ class mapChart {
     const mousemove = function (event, d) {
       vis.tooltip
         // .html('<p>mouse is moving</p>')
-        .style('left', (d3.mouse(this)[0]) + 'px')
-        .style('top', (d3.mouse(this)[1] + 20) + 'px')
+        .style('left', (d3.mouse(this)[0] + 10) + 'px')
+        .style('top', (d3.mouse(this)[1] + 70) + 'px')
     }
 
-    // removing tooltip when mouse leaving
+    // hide tooltip when mouse is leaving
     const mouseleave = function (d) {
       vis.tooltip.style('opacity', 0)
     }
 
-    // better projection
+    // projection with geoData to fit size 
     vis.projection = d3.geoMercator()
       .fitSize([vis.WIDTH, vis.HEIGHT], vis.geoData)
 
     // drawing path
     vis.path = d3.geoPath()
       .projection(vis.projection)
-
     vis.g.selectAll('path')
       .data(vis.geoData.features)
       .enter()
@@ -117,7 +123,8 @@ class mapChart {
       .on('mouseleave', mouseleave)
   }
 
-  // sum data of subunits of a same region & date
+
+  // sum the latest data of region's subunits('province')
   getLastRegionData(region) {
     const vis = this
     const lastReport = vis.data[region][0]
