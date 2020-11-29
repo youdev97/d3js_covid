@@ -33,8 +33,8 @@ class lineChart {
 
     vis.g.append('text')
       .attr('x', vis.WIDTH / 2)
-      .attr('y', 0)
-      .text('Brussels')
+      .attr('y', -15)
+      .text('Brussels hospitals')
 
     // add the line for the first time
     vis.g.append('path')
@@ -56,7 +56,7 @@ class lineChart {
       .attr('transform', 'rotate(-90)')
       .attr('y', -60)
       .attr('x', -170)
-      .attr('font-size', '20px')
+      .attr('font-size', '25px')
       .attr('text-anchor', 'middle')
       .text(vis.title)
 
