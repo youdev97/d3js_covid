@@ -43,8 +43,8 @@ d3.json(url).then(function (data) {
   //console.log(formattedData)
 
   // data is ready, building the line charts
-  lineChart1 = new lineChart('#chart-area', 'new_in', 'Hospital covid-19 new entries')
-  lineChart2 = new lineChart('#chart-area2', 'total_in', 'Total of covid-19 patients ')
+  lineChart1 = new lineChart('#chart-area', 'new_in', 'covid-19 new entries')
+  lineChart2 = new lineChart('#chart-area2', 'total_in', 'covid-19 patients')
 
   // build the map chart
   d3.json('data/belgium.json').then(function (values) {

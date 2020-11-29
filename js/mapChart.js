@@ -121,9 +121,23 @@ class mapChart {
       .on('mouseover', mouseover)
       .on('mousemove', mousemove)
       .on('mouseleave', mouseleave)
+
+    // function to resize map 
+    const resize = () => {
+      vis.WIDTH = parseInt(d3.select('#map').style('width'))
+      vis.HEIGHT = vis.WIDTH * vis.mapRatio
+      vis.g.attr('width', vis.WIDTH).attr('height', vis.HEIGHT)
+      // update projection
+      vis.projection
+        .fitSize([vis.WIDTH, vis.HEIGHT], vis.geoData)
+
+      // resize the map
+      vis.g.selectAll('path').attr('d', vis.path);
+    }
+
+    // resize event
+    d3.select(window).on("resize", resize)
   }
-
-
   // sum the latest data of region's subunits('province')
   getLastRegionData(region) {
     const vis = this
