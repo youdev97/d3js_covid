@@ -55,11 +55,17 @@ d3.json(url).then(function (data) {
   })
 })
 
+d3.selectAll(".btn").on("click", handleBtn);
+
+function handleBtn() {
+  city = this.getAttribute("data-index")
+  updateCharts(city)
+}
 
 // update line charts on some buttons or select-box events
-function updateCharts () {
-  lineChart1.wrangleData()
-  lineChart2.wrangleData()
+function updateCharts (city) {
+  lineChart1.wrangleData(city)
+  lineChart2.wrangleData(city)
 }
 
 // update map ...

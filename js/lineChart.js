@@ -28,7 +28,7 @@ class lineChart {
 
     // for tooltip
     vis.bisectDate = d3.bisector(d => {
-      return d.date
+      return d.key
     }).left
 
     vis.g.append('text')
@@ -77,13 +77,25 @@ class lineChart {
     vis.yAxis = vis.g.append('g')
       .attr('class', 'y axis')
 
-    vis.wrangleData()
+    vis.wrangleData('Flanders')
   }
 
   // selecting/filtering the data with an interaction slider, buttons etc
-  wrangleData() {
+  wrangleData(city) {
     const vis = this
-    vis.filteredData = [...formattedData['Brussels']]
+    // filter by region
+    vis.filteredData = [...formattedData[city]]
+    // if region have subunits sum the data for the same date
+    vis.filteredData = d3.nest()
+               .key(function(d) {
+                 return Date.parse(d.date);
+               })
+               .rollup(function(v) {
+                 return d3.sum(v, function(d) {
+                   return d[vis.variable];
+                 });
+               })
+               .entries(vis.filteredData);
     vis.updateVis()
   }
 
@@ -93,10 +105,10 @@ class lineChart {
     vis.t = d3.transition().duration(1000)
 
     // update scales
-    vis.x.domain(d3.extent(vis.filteredData, d => d.date))
+    vis.x.domain(d3.extent(vis.filteredData, d => d.key))
     vis.y.domain([
-      d3.min(vis.filteredData, d => d[vis.variable]),
-      d3.max(vis.filteredData, d => d[vis.variable])
+      d3.min(vis.filteredData, d => d.value),
+      d3.max(vis.filteredData, d => d.value)
     ])
 
     // update axes
@@ -145,19 +157,19 @@ class lineChart {
       const i = vis.bisectDate(vis.filteredData, x0, 1)
       const d0 = vis.filteredData[i - 1]
       const d1 = i === vis.filteredData.length ? vis.filteredData[i - 1] : vis.filteredData[i] // avoid error on last index
-      const d = x0 - d0.date > d1.date - x0 ? d1 : d0
-      vis.focus.attr('transform', `translate(${vis.x(d.date)}, ${vis.y(d[vis.variable])})`)
-      vis.focus.select('text').text(d[vis.variable])
-      vis.focus.select('.x-hover-line').attr('y2', vis.HEIGHT - vis.y(d[vis.variable]))
-      vis.focus.select('.y-hover-line').attr('x2', -vis.x(d.date))
+      const d = x0 - d0.key > d1.key - x0 ? d1 : d0
+      vis.focus.attr('transform', `translate(${vis.x(d.key)}, ${vis.y(d.value)})`)
+      vis.focus.select('text').text(d.value)
+      vis.focus.select('.x-hover-line').attr('y2', vis.HEIGHT - vis.y(d.value))
+      vis.focus.select('.y-hover-line').attr('x2', -vis.x(d.key))
     }
 
     /********************************* Tooltip Code ********************************/
 
     // Path generator
     vis.line = d3.line()
-      .x(d => vis.x(d.date))
-      .y(d => vis.y(d[vis.variable]))
+      .x(d => vis.x(d.key))
+      .y(d => vis.y(d.value))
 
     // Update our line path
     vis.g.select('.line')
