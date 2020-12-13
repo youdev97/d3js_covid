@@ -32,7 +32,7 @@
 
 /****** Map ******/
 .region {
-  fill: #ffffff;
+  fill: rgb(240,240,240);
   stroke: #000000;
   stroke-width: 0.5;
 }
