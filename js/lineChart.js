@@ -77,7 +77,7 @@ class lineChart {
     vis.yAxis = vis.g.append('g')
       .attr('class', 'y axis')
 
-    vis.wrangleData('Flanders')
+    vis.wrangleData('Brussels')
   }
 
   // selecting/filtering the data with an interaction slider, buttons etc
@@ -88,14 +88,15 @@ class lineChart {
     // if region have subunits sum the data for the same date
     vis.filteredData = d3.nest()
                .key(function(d) {
-                 return Date.parse(d.date);
+                 return Date.parse(d.date)
                })
                .rollup(function(v) {
                  return d3.sum(v, function(d) {
-                   return d[vis.variable];
+                   return d[vis.variable]
                  });
                })
-               .entries(vis.filteredData);
+               .entries(vis.filteredData)
+    vis.g.select('text').text(city) //update title
     vis.updateVis()
   }
 
@@ -153,6 +154,7 @@ class lineChart {
       .on('mousemove', mousemove)
 
     function mousemove() {
+      //console.log(vis.filteredData)
       const x0 = vis.x.invert(d3.mouse(this)[0])
       const i = vis.bisectDate(vis.filteredData, x0, 1)
       const d0 = vis.filteredData[i - 1]

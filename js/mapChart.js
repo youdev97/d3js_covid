@@ -54,7 +54,7 @@ class mapChart {
 
   wrangleData() {
     const vis = this
-    vis.data = { ...formattedData }
+    vis.data = Object.create(formattedData) //copy object with no reference to avoid perturb the linechart who need data ordered by date asc
     vis.geoData = geoData
     // sort by date desc because we want recent data
     Object.values(vis.data).map(region => {
