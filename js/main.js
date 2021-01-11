@@ -12,7 +12,7 @@ const parseTime = d3.timeParse('%Y-%m-%d')
 const formatTime = d3.timeFormat('%d/%m/%Y')
 
 const url = 'https://data.opendatasoft.com/api/records/1.0/search/?dataset=covid-19-pandemic-belgium-hosp-province%40public&rows=1200&sort=date&facet=date&facet=province&facet=region'
-//const url = 'data/data.json' in case of broken url test with this
+// const url = 'data/data.json' in case of broken url test with this
 d3.json(url).then(function (data) {
   // wrapping data into an array
   data = Object.values(data)
@@ -40,7 +40,7 @@ d3.json(url).then(function (data) {
         return a.date - b.date
       })
   })
-  //console.log(formattedData)
+  console.log(formattedData)
 
   // data is ready, building the line charts
   lineChart1 = new lineChart('#chart-area', 'new_in', 'covid-19 new entries')
@@ -55,10 +55,10 @@ d3.json(url).then(function (data) {
   })
 })
 
-d3.selectAll(".btn").on("click", handleBtn);
+d3.selectAll('.btn').on('click', handleBtn)
 
-function handleBtn() {
-  city = this.getAttribute("data-index")
+function handleBtn () {
+  city = this.getAttribute('data-index')
   updateCharts(city)
 }
 
